@@ -855,6 +855,8 @@ bool Graph::path_max_independent_set(int vertex_weights[], Set& S) const {
             return false;
         } 
     }
+    if(edge_count()!=vertex_count()-1)
+      return false;
 
    int A[vertex_count()+1];
     A[0] = 0;
