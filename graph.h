@@ -382,6 +382,8 @@ private:
 
   void cliques_rec(Set& p, Set& r, Set& x, std::list<Set>& cliques) const;
   
+  void sort_edges_by_weight(std::tuple<int,int,int> edges[], int start, int end) const ;
+
 };
 
 
